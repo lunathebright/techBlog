@@ -6,7 +6,7 @@ module.exports = {
   siteUrl: `https://lunabright.netlify.app/`, // Your blog site url
   social: {
     twitter: ``, // Your Twitter account
-    github: `/lunathebright`, // Your GitHub account
+    github: `lunathebright`, // Your GitHub account
     medium: ``, // Your Medium account
     facebook: ``, // Your Facebook account
     linkedin: ``, // Your LinkedIn account
