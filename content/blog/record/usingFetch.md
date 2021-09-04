@@ -1,6 +1,6 @@
 ---
 title: '[record] fetch로 서버와 통신하기'
-date: 2020-06-30 16:21:13
+date: 2021-06-30 16:21:13
 category: 'record'
 draft: false
 ---

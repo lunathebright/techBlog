@@ -1,6 +1,6 @@
 module.exports = {
   title: `Luna Log`,
-  description: `Blog posted about dev things`,
+  description: `Blog posted about my dev things`,
   author: `Luna`,
   introduction: `Summer-born, summer-like passionate frontend developer`,
   siteUrl: `https://lunabright.netlify.app/`, // Your blog site url
@@ -22,10 +22,10 @@ module.exports = {
     countOfInitialPost: 10, // Config your initial count of post
   },
   sponsor: {
-    buyMeACoffeeId: 'jbee',
+    buyMeACoffeeId: 'lunabright',
   },
   share: {
-    facebookAppId: '', // Add facebookAppId for using facebook share feature v3.2
+    facebookAppId: '01067074282', // Add facebookAppId for using facebook share feature v3.2
   },
   ga: '0', // Add your google analytics tranking ID
 }
