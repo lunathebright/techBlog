@@ -4,10 +4,12 @@ date: 2019-1-27 16:21:13
 lang: 'en'
 ---
 
-# Your name
+# Luna
 
-<div align="center">
+<div align="left">
 
-_Thank you for reading my resume. If you want to contact me, Please send me an email._
+![](../assets/kaleidico-26MJGnCM0Wc-unsplash.jpg)
+
+이력서 링크 준비중
 
 </div>
