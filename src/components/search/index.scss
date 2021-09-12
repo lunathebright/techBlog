@@ -1,0 +1,23 @@
+.search-container {
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  width: 25%;
+  height: 32px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: calc(60% + 8px);
+    right: 18px;
+    width: 5px;
+    border-top: 1px solid #eee;
+    transition: width 0.3s ease-out;
+  }
+
+  &.active {
+    &::before {
+      width: calc(100% - 18px);
+    }
+  }
+}

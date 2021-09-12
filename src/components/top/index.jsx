@@ -3,6 +3,7 @@ import { Link } from 'gatsby'
 import { GitHubIcon } from '../social-share/github-icon'
 
 import './index.scss'
+import { Search } from '../search'
 
 export const Top = ({ title, location, rootPath }) => {
   const isRoot = location.pathname === rootPath
@@ -13,7 +14,8 @@ export const Top = ({ title, location, rootPath }) => {
           {title}
         </Link>
       )}
-      <GitHubIcon />
+      <Search />
+      {/* <GitHubIcon /> */}
     </div>
   )
 }
