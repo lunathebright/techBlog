@@ -10,7 +10,15 @@ body.dark {
 
   .search-container {
     color: $dark-link-color;
-    background: rgba($dark-link-color, 0.2);
+    background: $dark-category-border-color;
+
+    .search-results {
+      background: $dark-category-border-color;
+
+      .search-result:hover {
+        background: $dark-point-color;
+      }
+    }
   }
 
   .bio {

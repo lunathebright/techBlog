@@ -9,7 +9,15 @@ body.light {
 
   .search-container {
     color: $light-link-color;
-    background: rgba($light-link-color, 0.2);
+    background: $light-category-border-color;
+
+    .search-results {
+      background: $light-category-border-color;
+
+      .search-result:hover {
+        background: $light-point-color;
+      }
+    }
   }
 
   .bio {

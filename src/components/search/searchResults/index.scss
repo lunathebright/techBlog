@@ -1,0 +1,35 @@
+.link {
+  color: inherit;
+}
+
+.search-results {
+  position: absolute;
+  top: 26px;
+  left: 0;
+  margin: 0;
+  padding-top: 6px;
+  width: 100%;
+  border-radius: 5px;
+  z-index: 9;
+
+  .search-result {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 0;
+    padding: 7px 35px 10px;
+    border-radius: 5px;
+    list-style: none;
+    transition: background 0.4s ease-out;
+    color: inherit;
+
+    .result-title {
+      margin-bottom: 3px;
+      font-size: 95%;
+      font-weight: 500;
+    }
+
+    .result-info {
+      font-size: 70%;
+    }
+  }
+}

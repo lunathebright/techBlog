@@ -1,17 +1,53 @@
-import React from 'react'
+import React, { useState } from 'react'
+import { StaticQuery } from 'gatsby'
+
 import { SearchIcon } from './searchIcon'
 import { SearchInput } from './searchInput'
+import { SearchResult } from './searchResults'
 
 import './index.scss'
 
 export const Search = () => {
-  const body = document.querySelector('body')
-  const color = body.className === 'light' ? 'rgb(88, 124, 185)' : '#fbc2eb'
+  const [searchState, setSearchState] = useState({
+    searchedData: [],
+    query: '',
+  })
 
   return (
-    <section className="search-container">
-      <SearchIcon color={color} />
-      <SearchInput />
-    </section>
+    <StaticQuery
+      query={searchQuery}
+      render={data => {
+        return (
+          <section className="search-container">
+            <SearchIcon />
+            <SearchInput data={data} setSearchState={setSearchState} />
+            {searchState.searchedData && (
+              <SearchResult searchedData={searchState.searchedData} />
+            )}
+          </section>
+        )
+      }}
+    />
   )
 }
+
+const searchQuery = graphql`
+  query SearchQuery {
+    allMarkdownRemark(sort: { fields: id }) {
+      edges {
+        node {
+          id
+          frontmatter {
+            title
+            draft
+            category
+            date
+          }
+          fields {
+            slug
+          }
+        }
+      }
+    }
+  }
+`
