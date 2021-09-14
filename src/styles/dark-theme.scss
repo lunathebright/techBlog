@@ -8,6 +8,11 @@ body.dark {
     color: $dark-light-font-color;
   }
 
+  .search-container {
+    color: $dark-link-color;
+    background: rgba($dark-link-color, 0.2);
+  }
+
   .bio {
     .author-name-content {
       background-color: $dark-category-border-color;

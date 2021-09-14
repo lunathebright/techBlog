@@ -5,27 +5,13 @@ import { SearchInput } from './searchInput'
 import './index.scss'
 
 export const Search = () => {
-  const [isClicked, setIsClicked] = React.useState(false)
-
-  const handleClickWindow = () => {
-    console.log('window')
-  }
-
-  React.useEffect(() => {
-    console.log(isClicked)
-    if (isClicked) {
-      window.addEventListener('click', handleClickWindow)
-    } else if (!isClicked) {
-      window.removeEventListener('click', handleClickWindow)
-    }
-  }, [isClicked])
+  const body = document.querySelector('body')
+  const color = body.className === 'light' ? 'rgb(88, 124, 185)' : '#fbc2eb'
 
   return (
-    <section
-      className={isClicked ? 'search-container active' : 'search-container'}
-    >
-      {isClicked && <SearchInput />}
-      <SearchIcon setIsClicked={setIsClicked} />
+    <section className="search-container">
+      <SearchIcon color={color} />
+      <SearchInput />
     </section>
   )
 }

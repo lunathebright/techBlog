@@ -9,13 +9,16 @@ export const Top = ({ title, location, rootPath }) => {
   const isRoot = location.pathname === rootPath
   return (
     <div className="top">
-      {!isRoot && (
+      {/* {!isRoot && (
         <Link to={`/`} className="link">
           {title}
         </Link>
-      )}
-      <Search />
-      {/* <GitHubIcon /> */}
+      )} */}
+      <Link to={`/`} className="link">
+        {title}
+      </Link>
+      {/* <Search /> */}
+      <GitHubIcon />
     </div>
   )
 }
