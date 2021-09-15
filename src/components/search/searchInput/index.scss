@@ -1,0 +1,17 @@
+.search-input {
+  width: 100%;
+  padding-left: 35px;
+
+  input {
+    background: none;
+    width: calc(100% - 10px);
+    margin-top: 4px;
+    border: none;
+    color: inherit;
+    font-size: 14px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

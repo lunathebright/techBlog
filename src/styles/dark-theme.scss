@@ -8,6 +8,19 @@ body.dark {
     color: $dark-light-font-color;
   }
 
+  .search-container {
+    color: $dark-link-color;
+    background: $dark-category-border-color;
+
+    .search-results {
+      background: $dark-category-border-color;
+
+      .search-result:hover {
+        background: $dark-point-color;
+      }
+    }
+  }
+
   .bio {
     .author-name-content {
       background-color: $dark-category-border-color;
