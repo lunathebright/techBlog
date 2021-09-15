@@ -4,9 +4,6 @@ import './index.scss'
 import '../../../styles/variables.scss'
 
 export const SearchIcon = () => {
-  const body = document.querySelector('body')
-  const [themeState, setThemeState] = React.useState(body.className === 'light')
-
   return (
     <div className="search-icon-container">
       <i className="fas fa-search"></i>
