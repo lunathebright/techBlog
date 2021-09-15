@@ -1,0 +1,15 @@
+.search-icon-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  cursor: pointer;
+
+  .fas.fa-search {
+    font-size: 16px;
+  }
+}

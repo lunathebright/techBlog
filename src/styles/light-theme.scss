@@ -7,6 +7,19 @@ body.light {
     color: $dark-gray;
   }
 
+  .search-container {
+    color: $light-link-color;
+    background: $light-category-border-color;
+
+    .search-results {
+      background: $light-category-border-color;
+
+      .search-result:hover {
+        background: $light-point-color;
+      }
+    }
+  }
+
   .bio {
     .author-name-content {
       background-color: $light-category-border-color;
