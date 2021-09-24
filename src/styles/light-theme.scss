@@ -11,6 +11,10 @@ body.light {
     color: $light-link-color;
     background: $light-category-border-color;
 
+    .search-icon-container {
+      fill: $light-link-color;
+    }
+
     .search-results {
       background: $light-category-border-color;
 

@@ -12,6 +12,10 @@ body.dark {
     color: $dark-link-color;
     background: $dark-category-border-color;
 
+    .search-icon-container {
+      fill: $dark-link-color;
+    }
+
     .search-results {
       background: $dark-category-border-color;
 
