@@ -17,12 +17,6 @@ export default class HTML extends React.Component {
             name="google-site-verification"
             content="L6zjfidvVVTnhwa6xkT_KOeUXzf6AKDvheZRg3Pftrw"
           />
-          <link
-            rel="stylesheet"
-            href="https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-            integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-            crossorigin="anonymous"
-          />
         </head>
         <body {...this.props.bodyAttributes}>
           {this.props.preBodyComponents}
