@@ -16,9 +16,12 @@ export const SearchInput = ({ setSearchState, data }) => {
     const posts = data.allMarkdownRemark.edges || []
 
     const searchedData = posts.filter(post => {
-      const { title, draft } = post.node.frontmatter
+      const { title, draft, category } = post.node.frontmatter
       return (
-        !draft && title && title.toLowerCase().includes(query.toLowerCase())
+        category &&
+        !draft &&
+        title &&
+        title.toLowerCase().includes(query.toLowerCase())
       )
     })
 
