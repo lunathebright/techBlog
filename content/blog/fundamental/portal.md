@@ -1,7 +1,7 @@
 ---
 title: '[React] Portal'
 date: 2021-10-29 10:40:13
-category: 'fundalmental'
+category: 'fundamental'
 draft: false
 ---
 
