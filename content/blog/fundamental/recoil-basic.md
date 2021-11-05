@@ -40,7 +40,11 @@ yarn add recoil
 import { RecoilRoot } from 'recoil'
 
 function App() {
-  return <RecoilRoot>// 화면을 구성할 컴포넌트 위치</RecoilRoot>
+  return (
+    <RecoilRoot>
+      <화면을 구성할 컴포넌트 />
+    </RecoilRoot>
+  )
 }
 ```
 
