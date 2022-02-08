@@ -7,6 +7,8 @@ draft: false
 
 # Naver Map API - 마커
 
+[Tutorial - 마커](https://navermaps.github.io/maps.js.ncp/docs/tutorial-2-Marker.html)
+
 ## 마커 표시하기
 
 마커는 지도 위의 한 위치를 표시하는 아이콘으로 지도에 오버레이되어 표현된다. 가장 기본적인 사용은 Map 클래스와 마찬가지로 Marker 클래스의 새 인스턴스를 생성하면 된다.
